@@ -1,6 +1,7 @@
+import { Box } from '@mui/material'
 import React from 'react'
 import '../../App.css'
-import { allBrandsArray, allMotorWattageArray, allTopSpeedsArray, allWheelSizesArray } from '../functions/sidebar_functions'
+import { allBrandsArray, allMotorLocationArray, allMotorWattageArray, allTopSpeedsArray, allWheelSizesArray } from '../functions/sidebar_functions'
 import NavbarItem from './navbar_item'
 
 function SideNavbar () {
@@ -8,9 +9,11 @@ function SideNavbar () {
   const brands = allBrandsArray()
   const motorWattages = allMotorWattageArray()
   const topSpeeds = allTopSpeedsArray()
+  const motorType = allMotorLocationArray()
 
   return (
-    <div className='SideNavbar'>
+    <Box
+    className='SideNavbar'>
       <NavbarItem
         title= {'Wheel Sizes'}
         subNavItems={wheelSizes}
@@ -28,10 +31,10 @@ function SideNavbar () {
       subNavItems={topSpeeds}
       />
       <NavbarItem
-      title= {'Wheel Sizes'}
-      subNavItems={wheelSizes}
+      title= {'Motor Type'}
+      subNavItems={motorType}
       />
-    </div>
+    </Box>
   )
 }
 

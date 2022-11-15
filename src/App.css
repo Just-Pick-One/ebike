@@ -9,6 +9,13 @@
   height: 100%;
   width: 15%;
   background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.SideNavbarItems {
+
 }
 
 .App-header {
