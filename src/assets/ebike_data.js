@@ -3,7 +3,6 @@ export const data = {
     {
       id: 1,
       archive: false,
-      archive: false,
       brand: 'Fucare',
       model: 'Gemini',
       style: ['cargo', 'utility', 'fat tire'],
