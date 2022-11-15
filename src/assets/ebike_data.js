@@ -2,48 +2,37 @@ export const data = {
   ebikes: [
     {
       id: 1,
-      basic: {
-        brand: "Fucare",
-        model: "Gemini",
-        style: ["cargo", "utility", "fat tire"],
-        price: 1899,
-        weight: 79.4,
-        weight_capacity_lbs: 400,
-        top_speed_mph: 28,
-        wheel_size_in: 20,
-        tire_width_in: 4,
-        colors: ["Graphite Grey"],
-        folding: false,
-        step_thru: true,
-      },
-      electronics: {
-        battery: {
-          capacity_ah: 20.8,
-          voltage: 48,
-        },
-        controller_a: 20,
-        motor_wattage: 750,
-        motor_brand: "Fucare",
-        torque_max_nm: 80,
-        range: 100,
-        cruise_control: true,
-      },
-      bicycle_components: {
-        brakes: {
-          brand: "Logan",
-          type: "hydraulic"
-        },
-        suspension: ["front"],
-        rear_rack: "included", // included, optional, none
-        front_basket: "optional", // included, optional, none
-        fenders: "included", // included, optional, none
-        speeds: 7,
-        crank_set_teeth: 42,
-      }
+      brand: "Fucare",
+      model: "Gemini",
+      style: ["cargo", "utility", "fat tire"],
+      price: 1899,
+      weight: 79.4,
+      weight_capacity_lbs: 400,
+      top_speed_mph: 28,
+      wheel_size_in: 20,
+      tire_width_in: 4,
+      colors: ["Graphite Grey"],
+      folding: false,
+      step_thru: true,
+      battery_capacity_ah: 20.8,
+      battery_voltage: 48,
+      controller_a: 20,
+      motor_wattage: 750,
+      motor_brand: "Fucare",
+      torque_max_nm: 80,
+      range: 100,
+      cruise_control: true,
+      brake_brand: "Logan",
+      brake_type: "hydraulic",
+      suspension: ["front"],
+      rear_rack: "included",
+      front_basket: "optional",
+      fenders: "included",
+      speeds: 7,
+      crank_set_teeth: 42,
     },
     {
       id: 2,
-      basic: {
         brand: "Fucare",
         model: "Gemini X",
         style: ["cargo", "utility", "fat tire"],
@@ -56,35 +45,25 @@ export const data = {
         colors: ["Graphite Grey"],
         folding: false,
         step_thru: false,
-      },
-      electronics: {
-        battery: {
-          capacity_ah: 20.8,
-          voltage: 48,
-        },
+        battery_capacity_ah: 20.8,
+        battery_voltage: 48,
         controller_a: 20,
         motor_wattage: 750,
         motor_brand: "Fucare",
         torque_max_nm: 80,
         range: 100,
         cruise_control: true,
-      },
-      bicycle_components: {
-        brakes: {
-          brand: "Logan",
-          type: "hydraulic"
-        },
+        brake_brand: "Logan",
+        brake_type: "hydraulic",
         suspension: ["front"],
-        rear_rack: "included", // included, optional, none
-        front_basket: "optional", // included, optional, none
-        fenders: "included", // included, optional, none
+        rear_rack: "included",
+        front_basket: "optional",
+        fenders: "included",
         speeds: 7,
         crank_set_teeth: 42,
-      }
     },
     {
       id: 3,
-      basic: {
         brand: "Ariel Rider",
         model: "Kepler",
         style: ["commuter", "fat tire"],
@@ -97,35 +76,25 @@ export const data = {
         colors: ["Black/Red", "Black/Blue", "Gray/Black", "Gray/Pink"],
         folding: false,
         step_thru: true,
-      },
-      electronics: {
-        battery: {
-          capacity_ah: 20,
-          voltage: 52,
-        },
+          battery_capacity_ah: 20,
+          battery_voltage: 52,
         controller_a: 33,
         motor_wattage: 1000,
         motor_brand: "Bafang",
         torque_max_nm: -1,
         range: 75,
         cruise_control: false,
-      },
-      bicycle_components: {
-        brakes: {
-          brand: "Tektro HD-E 350",
-          type: "hydraulic"
-        },
+        brake_brand: "Tektro HD-E 350",
+        brake_type: "hydraulic",
         suspension: ["front"],
-        rear_rack: "included", // included, optional, none
-        front_basket: "optional", // included, optional, none
-        fenders: "included", // included, optional, none
+        rear_rack: "included",
+        front_basket: "optional",
+        fenders: "included",
         speeds: 7,
         crank_set_teeth: 52,
-      }
-    },
-        {
+      },
+      {
       id: 4,
-      basic: {
         brand: "Ariel Rider",
         model: "X-Class 52V",
         style: ["fat tire"],
@@ -138,35 +107,25 @@ export const data = {
         colors: ["Red", "Black", "Blue"],
         folding: false,
         step_thru: true,
-      },
-      electronics: {
-        battery: {
-          capacity_ah: 20,
-          voltage: 52,
-        },
+          battery_capacity_ah: 20,
+          battery_voltage: 52,
         controller_a: 33,
         motor_wattage: 1000,
         motor_brand: "Bafang",
         torque_max_nm: 110,
         range: 75,
         cruise_control: false,
-      },
-      bicycle_components: {
-        brakes: {
-          brand: "Tektro Dorado HDE350",
-          type: "hydraulic"
-        },
+          brake_brand: "Tektro Dorado HDE350",
+          brake_type: "hydraulic",
         suspension: ["front", "rear"],
-        rear_rack: "optional", // included, optional, none
-        front_basket: "none", // included, optional, none
-        fenders: "included", // included, optional, none
+        rear_rack: "optional",
+        front_basket: "none",
+        fenders: "included",
         speeds: 7,
         crank_set_teeth: 48,
-      }
     },
     {
       id: 4,
-      basic: {
         brand: "Ariel Rider",
         model: "X-Class 52V Step-Thru",
         style: ["fat tire"],
@@ -179,35 +138,25 @@ export const data = {
         colors: ["Red", "Black", "Blue"],
         folding: false,
         step_thru: true,
-      },
-      electronics: {
-        battery: {
-          capacity_ah: 35,
-          voltage: 52,
-        },
+          battery_capacity_ah: 35,
+          battery_voltage: 52,
         controller_a: 33,
         motor_wattage: 2000,
         motor_brand: "Bafang",
         torque_max_nm: 110,
         range: 70,
         cruise_control: false,
-      },
-      bicycle_components: {
-        brakes: {
-          brand: "Tektro Dorado HDE350",
-          type: "hydraulic"
-        },
+          brake_brand: "Tektro Dorado HDE350",
+          brake_type: "hydraulic",
         suspension: ["front", "rear"],
-        rear_rack: "optional", // included, optional, none
-        front_basket: "none", // included, optional, none
-        fenders: "included", // included, optional, none
+        rear_rack: "optional",
+        front_basket: "none",
+        fenders: "included",
         speeds: 7,
         crank_set_teeth: 48,
-      }
     },
     {
       id: 5,
-      basic: {
         brand: "Ariel Rider",
         model: "Grizzly - 52V Dual Motor",
         style: ["fat tire", "dual motor"],
@@ -220,31 +169,22 @@ export const data = {
         colors: ["Red", "Yello", "Blue"],
         folding: false,
         step_thru: false,
-      },
-      electronics: {
-        battery: {
-          capacity_ah: 20,
-          voltage: 52,
-        },
+          battery_capacity_ah: 20,
+          battery_voltage: 52,
         controller_a: -1,
         motor_wattage: 1000,
         motor_brand: "Bafang",
         torque_max_nm: -1,
         range: 75,
         cruise_control: false,
-      },
-      bicycle_components: {
-        brakes: {
-          brand: "Tektro Dorado HDE350",
-          type: "hydraulic"
-        },
+          brake_brand: "Tektro Dorado HDE350",
+          brake_type: "hydraulic",
         suspension: ["front", "rear"],
-        rear_rack: "none", // included, optional, none
-        front_basket: "none", // included, optional, none
-        fenders: "included", // included, optional, none
+        rear_rack: "none",
+        front_basket: "none",
+        fenders: "included",
         speeds: 7,
         crank_set_teeth: 52,
-      }
     }
   ]
 }
