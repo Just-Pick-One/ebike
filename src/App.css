@@ -2,23 +2,51 @@
   /* text-align: center; */
   height: 100vh;
   width: 100%;
-  background-color: blue;
+  /* background-color: blue; */
+}
+.Header {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  background-color: #60777f;
+}
+
+.HeaderImage {
+  height: 15vh;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.HeaderText {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family:cursive;
+  font-size: 2.5em ;
 }
 
 .SideNavbar {
   height: 100%;
   width: 15%;
-  background-color: orange;
+  background-color: #60777f;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5em ;
 }
 
 .SideNavbarItems {
-
+  color: white;
+  padding: 10;
+  margin: 10;
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -27,6 +55,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from '@mui/material'
+// import { Typography } from '@mui/material'
 import { Box } from '@mui/system'
 
 function NavbarItem (props) {
@@ -9,17 +9,19 @@ function NavbarItem (props) {
   return (
     <Box
     className='SideNavbarItems'>
-    <Link
-      component="button"
-      variant="body2"
+    <h3
+      style={{ color: 'white' }}
+      // component="button"
+      // underline="hover"
+      // variant="body2"
       onClick={() => {
         if (!open) { setOpen(true) } else { setOpen(false) }
       }}
     >{title}
-    </Link>
+    </h3>
     {open
       ? subNavItems.map(item => {
-        return <div>{item}</div>
+        return <div key={item.id}>{item}</div>
       })
       : null
   }
