@@ -1,19 +1,17 @@
 import { useState } from 'react'
 // import { Typography } from '@mui/material'
 import { Box } from '@mui/system'
+import { filterEbikes } from '../functions/ebike_filter_function'
 
 function NavbarItem (props) {
-  const { title, subNavItems } = props
-
+  const { title, subNavItems, dataKey } = props
   const [open, setOpen] = useState(false)
+
   return (
     <Box
     className='SideNavbarItems'>
     <h3
       style={{ color: 'white' }}
-      // component="button"
-      // underline="hover"
-      // variant="body2"
       onClick={() => {
         if (!open) { setOpen(true) } else { setOpen(false) }
       }}
@@ -21,11 +19,16 @@ function NavbarItem (props) {
     </h3>
     {open
       ? subNavItems.map(item => {
-        return <div key={item.id}>{item}</div>
+        return <h4
+        className='SideNavBarSubItems'
+        key={item.id}
+        onClick={(event) => filterEbikes(dataKey, event.target.innerText)}
+        >
+          {item
+        }</h4>
       })
       : null
   }
-
     </Box>
   )
 }

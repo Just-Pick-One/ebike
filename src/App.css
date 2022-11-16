@@ -42,8 +42,12 @@
 
 .SideNavbarItems {
   color: white;
-  padding: 10;
-  margin: 10;
+
+}
+
+.SideNavBarSubItems {
+  padding: 100;
+  margin: 100;
 }
 
 /* .App-header {
