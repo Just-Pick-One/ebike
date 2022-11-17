@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "//just-pick-one.github.io/ebike/static/css/main.419ed904.css",
+    "main.js": "//just-pick-one.github.io/ebike/static/js/main.965a7e94.js",
+    "static/js/787.d736507b.chunk.js": "//just-pick-one.github.io/ebike/static/js/787.d736507b.chunk.js",
+    "static/media/logo.png": "//just-pick-one.github.io/ebike/static/media/logo.8c45d7ded4fc41a05b9f.png",
+    "index.html": "//just-pick-one.github.io/ebike/index.html",
+    "main.419ed904.css.map": "//just-pick-one.github.io/ebike/static/css/main.419ed904.css.map",
+    "main.965a7e94.js.map": "//just-pick-one.github.io/ebike/static/js/main.965a7e94.js.map",
+    "787.d736507b.chunk.js.map": "//just-pick-one.github.io/ebike/static/js/787.d736507b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.419ed904.css",
+    "static/js/main.965a7e94.js"
+  ]
+}
