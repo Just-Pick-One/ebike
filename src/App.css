@@ -1,9 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+ }
+
 .App {
   /* text-align: center; */
   height: 100vh;
   width: 100%;
   /* background-color: blue; */
 }
+
+.Body {
+  height: 100%;
+  width: 85%;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 20vh;
+  left: 15% ;
+
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5em ; */
+}
+
 .Header {
   position: relative;
   height: 20vh;
@@ -42,12 +64,17 @@
 
 .SideNavbarItems {
   color: white;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
 
 }
 
 .SideNavBarSubItems {
-  padding: 100;
-  margin: 100;
+  padding-left: 10px;
+  /* margin: 10px; */
+  font-size: 0.85em ;
+  text-decoration: none;
 }
 
 /* .App-header {

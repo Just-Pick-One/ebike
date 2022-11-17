@@ -4,7 +4,7 @@ import { Box } from '@mui/system'
 import { filterEbikes } from '../functions/ebike_filter_function'
 
 function NavbarItem (props) {
-  const { title, subNavItems, dataKey } = props
+  const { title, subNavItems, setEbikes, dataKey } = props
   const [open, setOpen] = useState(false)
 
   return (
@@ -22,7 +22,7 @@ function NavbarItem (props) {
         return <h4
         className='SideNavBarSubItems'
         key={item.id}
-        onClick={(event) => filterEbikes(dataKey, event.target.innerText)}
+        onClick={(event) => filterEbikes(dataKey, event.target.innerText, setEbikes)}
         >
           {item
         }</h4>
