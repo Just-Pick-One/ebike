@@ -17,12 +17,12 @@ function SideNavbar (props) {
   return (
     <Box
     className='SideNavbar'>
-      <NavbarItem
-        title= {'All Ebikes'}
-        subNavItems={data.ebikes}
-        setEbikes={setEbikes}
-        dataKey={'show_all'}
-      />
+      <h3
+      className='SideNavbarItems'
+      onClick={() => setEbikes(data.ebikes)}
+      >
+        All Bikes
+      </h3>
       <NavbarItem
         title= {'Wheel Sizes'}
         subNavItems={wheelSizes}
