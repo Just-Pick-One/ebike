@@ -20,6 +20,8 @@ function SideNavbar (props) {
       <NavbarItem
         title= {'All Ebikes'}
         subNavItems={data.ebikes}
+        setEbikes={setEbikes}
+        dataKey={'show_all'}
       />
       <NavbarItem
         title= {'Wheel Sizes'}
