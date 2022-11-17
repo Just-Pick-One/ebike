@@ -31,8 +31,7 @@ export const data = {
       front_basket: 'optional',
       fenders: 'included',
       speeds: 7,
-      image_url: 'https://cdn.shopify.com/s/files/1/0587/2818/6015/products/FUCAREGEMINISTEP-THRUELECTRICCARGOBIKEmain_1800x1800.jpg?v=1658931714',
-      website: 'https://fucarebike.com/products/fucare-gemini-electric-bike',
+      image_url: 'https://m.media-amazon.com/images/I/71+2GalNC3L._AC_SL1500_.jpg',
       throttle_control: 'thumb',
       crank_set_teeth: 42
     },
@@ -67,8 +66,7 @@ export const data = {
       front_basket: 'optional',
       fenders: 'included',
       speeds: 7,
-      image_url: 'https://cdn.shopify.com/s/files/1/0587/2818/6015/products/a2a62734f0200f5f5cfe6301b7a1bba6_1800x1800.jpg?v=1650121000',
-      website: 'https://fucarebike.com/products/fucare-gemini-x-electric-bike',
+      image_url: 'https://m.media-amazon.com/images/I/719tXK+JNzL._AC_SX679_.jpg',
       throttle_control: 'thumb',
       crank_set_teeth: 42
     },

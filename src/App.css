@@ -43,7 +43,7 @@
 
 .HeaderText {
   position: absolute;
-  top: 75%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
