@@ -4,7 +4,12 @@ import React from 'react'
 import EbikeThumbnail from './ebike_thumbnail'
 
 function MultiEbikeView (props) {
-  const { ebikeState } = props
+  const { ebikeState, setSingleEbike, setShowSingleEbikeView } = props
+
+  const showSingleEbike = (ebike) => {
+    setSingleEbike(ebike)
+    setShowSingleEbikeView(true)
+  }
 
   return (
     <div>
@@ -20,6 +25,7 @@ function MultiEbikeView (props) {
             srcSet={`${ebike.image_url}?w=248&fit=crop&auto=format&dpr=2 2x`}
             alt={ebike.brand}
             loading="lazy"
+            onClick={() => showSingleEbike(ebike)}
           />
           <ImageListItemBar
             title={ebike.brand}

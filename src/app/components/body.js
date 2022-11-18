@@ -3,14 +3,27 @@ import MultiEbikeView from './multi_ebike_view'
 import SingleBike from './single_bike'
 
 function Body (props) {
-  const { ebikeState } = props
+  const {
+    ebikeState,
+    setSingleEbike,
+    singleEbike,
+    showSingleEbikeView,
+    setShowSingleEbikeView
+  } = props
 
   return (
     <div className='Body' >
-      <SingleBike />
-      <MultiEbikeView
+     { showSingleEbikeView
+       ? <SingleBike
+          singleEbike={singleEbike}
+        />
+
+       : <MultiEbikeView
         ebikeState={ebikeState}
+        setSingleEbike={setSingleEbike}
+        setShowSingleEbikeView={setShowSingleEbikeView}
       />
+      }
     </div>
 
   )

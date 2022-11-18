@@ -7,6 +7,9 @@ import { data } from './assets/ebike_data'
 
 function App () {
   const [ebikes, setEbikes] = useState([])
+  const [singleEbike, setSingleEbike] = useState([])
+  const [showSingleEbikeView, setShowSingleEbikeView] = useState(false)
+
   useEffect(() => {
     setEbikes(data.ebikes)
   }, [])
@@ -16,9 +19,14 @@ function App () {
       <Header />
       <Body
       ebikeState={ebikes}
+      singleEbike={singleEbike}
+      setSingleEbike={setSingleEbike}
+      showSingleEbikeView={showSingleEbikeView}
+      setShowSingleEbikeView={setShowSingleEbikeView}
       />
       <SideNavbar
         setEbikes={setEbikes}
+        setShowSingleEbikeView={setShowSingleEbikeView}
       />
     </div>
   )
