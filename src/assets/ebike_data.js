@@ -32,6 +32,7 @@ export const data = {
       fenders: 'included',
       speeds: 7,
       image_url: 'https://m.media-amazon.com/images/I/71+2GalNC3L._AC_SL1500_.jpg',
+      website: 'https://fucarebike.com/products/fucare-gemini-electric-bike',
       throttle_control: 'thumb',
       crank_set_teeth: 42
     },
@@ -67,6 +68,7 @@ export const data = {
       fenders: 'included',
       speeds: 7,
       image_url: 'https://m.media-amazon.com/images/I/719tXK+JNzL._AC_SX679_.jpg',
+      website: 'https://fucarebike.com/products/fucare-gemini-x-electric-bike',
       throttle_control: 'thumb',
       crank_set_teeth: 42
     },

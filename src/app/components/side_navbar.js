@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+// import { Box } from '@mui/material'
 import React from 'react'
 import '../../App.css'
 import { data } from '../../assets/ebike_data'
@@ -20,7 +20,7 @@ function SideNavbar (props) {
   }
 
   return (
-    <Box
+    <div
     className='SideNavbar'>
       <h3
       className='SideNavbarItems'
@@ -63,7 +63,7 @@ function SideNavbar (props) {
         dataKey={'motor_location'}
         setShowSingleEbikeView={setShowSingleEbikeView}
       />
-    </Box>
+    </div>
   )
 }
 

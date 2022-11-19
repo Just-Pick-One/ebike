@@ -12,3 +12,12 @@ export const filterEbikes = (category, spec, setStateFunc) => {
   )
   setStateFunc(result)
 }
+
+export const cleanSingleEbikeData = (ebike) => {
+  const cleanedEbike = { ...ebike }
+  delete cleanedEbike.id
+  delete cleanedEbike.archive
+  delete cleanedEbike.image_url
+  delete cleanedEbike.website
+  return cleanedEbike
+}
