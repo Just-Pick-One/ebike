@@ -65,7 +65,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.5em ;
 }
 
@@ -100,7 +101,8 @@
 }
 
 .SingleEbikeTable {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.5em ;
   color: white;
   background-color: #60777f;

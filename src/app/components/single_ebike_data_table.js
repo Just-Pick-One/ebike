@@ -10,7 +10,6 @@ function SingleEbikeDataTable (props) {
     const vals = Object.values(ebike)
     const tableRows = []
     for (let i = 0; i < categories.length; i++) {
-      // if (categories[i] !== 'image_url' && categories[i] !== 'style') {
       tableRows.push(
               <tr key={categories[i]}>
                   <td style={{ border: '1px solid black ' }}>
@@ -21,7 +20,6 @@ function SingleEbikeDataTable (props) {
                   </td>
               </tr>
       )
-      // }
     }
     return tableRows
   }
