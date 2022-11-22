@@ -118,7 +118,7 @@ export const data = {
       crank_set_teeth: 48
     },
     {
-      id: 4,
+      id: 5,
       archive: false,
       brand: 'Ariel Rider',
       model: 'X-Class 52V Step-Thru',
@@ -147,7 +147,7 @@ export const data = {
       crank_set_teeth: 48
     },
     {
-      id: 5,
+      id: 6,
       archive: false,
       brand: 'Ariel Rider',
       model: 'Grizzly - 52V Dual Motor',

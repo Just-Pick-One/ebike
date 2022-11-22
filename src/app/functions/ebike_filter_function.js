@@ -2,15 +2,55 @@ import { data } from '../../assets/ebike_data'
 
 export const filterEbikes = (category, spec, setStateFunc) => {
   // eslint-disable-next-line array-callback-return
-  // const result = data.ebikes.filter((ebike) => { ebike[category] = spec })
-  const result = []
-  data.ebikes.forEach((ebike) => {
-    if (ebike[category].toString() === spec) {
-      result.push(ebike)
+  if (category === 'price') {
+    filterEbikesByPrice(spec, setStateFunc)
+  } else {
+    const result = []
+    data.ebikes.forEach((ebike) => {
+      if (ebike[category].toString() === spec) {
+        result.push(ebike)
+      }
     }
+    )
+    setStateFunc(result)
   }
-  )
-  setStateFunc(result)
+}
+
+// '0 - $999', '$1000 - $1999', '$2000 and up'
+
+const filterEbikesByPrice = (spec, setStateFunction) => {
+  const result = []
+  switch (spec) {
+    case '0 - $999':
+      data.ebikes.forEach((ebike) => {
+        if (ebike.price < 999) {
+          result.push(ebike)
+        }
+      }
+      )
+      setStateFunction(result)
+      break
+    case '$1000 - $1999':
+      data.ebikes.forEach((ebike) => {
+        if (ebike.price > 999 && ebike.price < 1999) {
+          result.push(ebike)
+        }
+      }
+      )
+      setStateFunction(result)
+      break
+    case '$2000 and up':
+      data.ebikes.forEach((ebike) => {
+        if (Number(ebike.price) > 2000) {
+          result.push(ebike)
+        }
+      }
+      )
+      setStateFunction(result)
+
+      break
+  }
+  setStateFunction(result)
 }
 
 export const cleanSingleEbikeData = (ebike) => {

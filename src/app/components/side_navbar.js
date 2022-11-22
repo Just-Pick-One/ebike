@@ -1,4 +1,4 @@
-// import { Box } from '@mui/material'
+
 import React from 'react'
 import '../../App.css'
 import { data } from '../../assets/ebike_data'
@@ -8,6 +8,7 @@ import NavbarItem from './navbar_item'
 function SideNavbar (props) {
   const { setEbikes, setShowSingleEbikeView } = props
 
+  const prices = ['0 - $999', '$1000 - $1999', '$2000 and up']
   const wheelSizes = allWheelSizesArray()
   const brands = allBrandsArray()
   const motorWattages = allMotorWattageArray()
@@ -28,6 +29,13 @@ function SideNavbar (props) {
       >
         All Bikes
       </h3>
+      <NavbarItem
+        title= {'Price'}
+        subNavItems={prices}
+        setEbikes={setEbikes}
+        dataKey={'price'}
+        setShowSingleEbikeView={setShowSingleEbikeView}
+      />
       <NavbarItem
         title= {'Wheel Sizes'}
         subNavItems={wheelSizes}
