@@ -60,6 +60,7 @@ export const cleanSingleEbikeData = (ebike) => {
   cleanedEbike.colors = cleanedEbike.colors.join(', ')
   cleanedEbike.accessories = cleanedEbike.accessories.join(', ')
   cleanedEbike.style = cleanedEbike.style.join(', ')
+  cleanedEbike.sizes = cleanedEbike.sizes.join(', ')
 
   if (cleanedEbike.torque_max_nm === -1) cleanedEbike.torque_max_nm = 'No Data'
 
@@ -85,6 +86,7 @@ const ebikeKeyDictionary = {
   style: 'Style(s)',
   accessories: 'Accessories',
   price: 'Price',
+  sizes: 'Sizes',
   weight: 'Weight (lbs)',
   weight_capacity_lbs: 'Weight Capacity (lbs)',
   top_speed_mph: 'Top Speed (mph)',
