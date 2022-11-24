@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ebike/static/css/main.de0447cb.css",
-    "main.js": "/ebike/static/js/main.f9b7c2a4.js",
+    "main.css": "/ebike/static/css/main.6ebc34bd.css",
+    "main.js": "/ebike/static/js/main.25d9a43e.js",
     "static/js/787.d736507b.chunk.js": "/ebike/static/js/787.d736507b.chunk.js",
     "static/media/logo.png": "/ebike/static/media/logo.8c45d7ded4fc41a05b9f.png",
     "index.html": "/ebike/index.html",
-    "main.de0447cb.css.map": "/ebike/static/css/main.de0447cb.css.map",
-    "main.f9b7c2a4.js.map": "/ebike/static/js/main.f9b7c2a4.js.map",
+    "main.6ebc34bd.css.map": "/ebike/static/css/main.6ebc34bd.css.map",
+    "main.25d9a43e.js.map": "/ebike/static/js/main.25d9a43e.js.map",
     "787.d736507b.chunk.js.map": "/ebike/static/js/787.d736507b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de0447cb.css",
-    "static/js/main.f9b7c2a4.js"
+    "static/css/main.6ebc34bd.css",
+    "static/js/main.25d9a43e.js"
   ]
 }
