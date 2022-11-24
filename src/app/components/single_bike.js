@@ -28,43 +28,22 @@ function SingleBike (props) {
 
   return (
     <div className='SingleEbikeView'>
-      <img
-      className='SingleEbikeImage'
-      src={singleEbike.image_url}
-      style={{ border: '3px solid black ' }}
-      ></img>
+      <h1 className='SingleEbikeTitle'>{singleEbike.brand}</h1>
+      <h2
+      className='SingleEbikeSubTitle'>{singleEbike.model}</h2>
+      {
+        singleEbike.image_url.map(image => (
+          <img
+          className='SingleEbikeImage'
+          src={image}
+          style={{ border: '3px solid black ' }}
+          ></img>
+        ))
+      }
+
       <SingleEbikeDataTable
         singleEbike={singleEbike}
       />
-      {/* <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>{singleEbike.brand}</TableCell>
-            <TableCell align="right">Price (usd)</TableCell>
-            <TableCell align="right">Weight&nbsp;(lbs)</TableCell>
-            <TableCell align="right">Top Speed&nbsp;(mph)</TableCell>
-            <TableCell align="right">Wheel Size&nbsp;(In)</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow
-              key={singleEbike.model}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            >
-              <TableCell component="th" scope="row">
-                {singleEbike.model}
-              </TableCell>
-              <TableCell align="right">{singleEbike.price}</TableCell>
-              <TableCell align="right">{singleEbike.weight}</TableCell>
-              <TableCell align="right">{singleEbike.top_speed_mph}</TableCell>
-              <TableCell align="right">{singleEbike.wheel_size_in}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer> */}
     </div>
   )
 }

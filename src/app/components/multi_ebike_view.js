@@ -18,10 +18,10 @@ function MultiEbikeView (props) {
         <ImageListItem key="Subheader" cols={2}>
         </ImageListItem>
         {ebikeState.map((ebike) => (
-          <ImageListItem key={ebike.image_url}>
+          <ImageListItem key={ebike.image_url[0]}>
             <img
-              src={`${ebike.image_url}?w=248&fit=crop&auto=format`}
-              srcSet={`${ebike.image_url}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              src={`${ebike.image_url[0]}?w=248&fit=crop&auto=format`}
+              srcSet={`${ebike.image_url[0]}?w=248&fit=crop&auto=format&dpr=2 2x`}
               alt={ebike.brand}
               loading="lazy"
               onClick={() => showSingleEbike(ebike)}

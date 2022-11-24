@@ -16,8 +16,6 @@ export const filterEbikes = (category, spec, setStateFunc) => {
   }
 }
 
-// '0 - $999', '$1000 - $1999', '$2000 and up'
-
 const filterEbikesByPrice = (spec, setStateFunction) => {
   const result = []
   switch (spec) {
@@ -68,4 +66,43 @@ export const cleanSingleEbikeData = (ebike) => {
   if (cleanedEbike.controller_a === -1) cleanedEbike.controller_a = 'No Data'
 
   return cleanedEbike
+}
+
+export const applyDictionaryToEbike = (ebikeCategories) => {
+  const translatedCategories = []
+  ebikeCategories.forEach(category => {
+    translatedCategories.push(ebikeKeyDictionary[category])
+  })
+  return translatedCategories
+}
+
+const ebikeKeyDictionary = {
+  id: 'id',
+  archive: 'Archived',
+  brand: 'Brand',
+  model: 'Model',
+  class: 'Class',
+  style: 'Style(s)',
+  accessories: 'Accessories',
+  price: 'Price',
+  weight: 'Weight (lbs)',
+  weight_capacity_lbs: 'Weight Capacity (lbs)',
+  top_speed_mph: 'Top Speed (mph)',
+  wheel_size_in: 'Wheel Size (in)',
+  tire_width_in: 'Tire Width (in)',
+  colors: 'Colors',
+  battery_capacity_ah: 'Battery Capacity (Ah)',
+  battery_voltage: 'Battery Voltage',
+  controller_a: 'Controller (amps)',
+  motor_location: 'Motor Type',
+  motor_wattage: 'Motor Wattage',
+  motor_brand: 'Motor Brand',
+  torque_max_nm: 'Torque (nm)',
+  range: 'Range (miles)',
+  brake_type: 'Brake Type',
+  speeds: 'Speeds',
+  image_url: 'Image URL',
+  website: 'Website',
+  throttle_control: 'Throttle Type',
+  crank_set_teeth: 'Crankset Size'
 }

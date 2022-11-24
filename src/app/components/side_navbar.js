@@ -2,7 +2,7 @@
 import React from 'react'
 import '../../App.css'
 import { data } from '../../assets/ebike_data'
-import { allBrandsArray, allMotorLocationArray, allMotorWattageArray, allTopSpeedsArray, allWheelSizesArray } from '../functions/sidebar_functions'
+import { allBrandsArray, allMotorLocationArray, allMotorWattageArray, allTopSpeedsArray, allWheelSizesArray, allClassArray } from '../functions/sidebar_functions'
 import NavbarItem from './navbar_item'
 
 function SideNavbar (props) {
@@ -14,6 +14,7 @@ function SideNavbar (props) {
   const motorWattages = allMotorWattageArray()
   const topSpeeds = allTopSpeedsArray()
   const motorType = allMotorLocationArray()
+  const classes = allClassArray()
 
   const handleClickAllBikes = () => {
     setEbikes(data.ebikes)
@@ -69,6 +70,13 @@ function SideNavbar (props) {
         subNavItems={motorType}
         setEbikes={setEbikes}
         dataKey={'motor_location'}
+        setShowSingleEbikeView={setShowSingleEbikeView}
+      />
+      <NavbarItem
+        title= {'Class'}
+        subNavItems={classes}
+        setEbikes={setEbikes}
+        dataKey={'class'}
         setShowSingleEbikeView={setShowSingleEbikeView}
       />
     </div>

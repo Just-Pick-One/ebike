@@ -56,3 +56,14 @@ export const allMotorLocationArray = () => {
   })
   return result
 }
+
+// Filter through data to return array of class options for NavbarItem component
+export const allClassArray = () => {
+  const result = []
+  ebikes.forEach(ebike => {
+    if (!result.includes(ebike.class)) {
+      result.push(ebike.class)
+    }
+  })
+  return result
+}
