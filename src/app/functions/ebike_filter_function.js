@@ -99,6 +99,7 @@ const ebikeKeyDictionary = {
   motor_location: 'Motor Type',
   motor_wattage: 'Motor Wattage',
   motor_brand: 'Motor Brand',
+  sensor: 'Sensor',
   torque_max_nm: 'Torque (nm)',
   range: 'Range (miles)',
   brake_type: 'Brake Type',
