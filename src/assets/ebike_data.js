@@ -223,6 +223,38 @@ export const data = {
       website: 'https://www.aventon.com/products/aventure-ebike',
       throttle_control: 'thumb',
       crank_set_teeth: 46
+    },
+    {
+      id: 8,
+      archive: false,
+      brand: 'Aventon',
+      model: 'Adventure Step-Through',
+      class: 3,
+      style: ['fat tire', 'front suspension', 'off road','step thru'],
+      accessories: ['basket', 'fenders', 'front rack', 'head light', 'rear rack','aventon battery','suspension seatpost'],
+      price: 1999,
+      sizes: ['S/M', 'M/L'],
+      weight: 73,
+      weight_capacity_lbs: 400,
+      top_speed_mph: 28,
+      wheel_size_in: 26,
+      tire_width_in: 4,
+      colors: ['Sand', 'Camouflage Green', 'Electric Red'],
+      battery_capacity_ah: 15,
+      battery_voltage: 48,
+      controller_a: -1,
+      motor_location: 'hub drive',
+      motor_wattage: 750,
+      motor_brand: 'No Data',
+      sensor: 'cadence',
+      torque_max_nm: -1,
+      range: 45,
+      brake_type: 'hydraulic',
+      speeds: 8,
+      image_url: ['https://cdn.shopify.com/s/files/1/1520/2468/products/AventureSoCalSand_5.jpg?v=1649183993&width=1200', 'https://cdn.shopify.com/s/files/1/1520/2468/products/aventure-step-through-electric-bike-gallery-6_c2facac7-ec3e-45c3-9327-39f415960b51.jpg?v=1651091603&width=1200', 'https://cdn.shopify.com/s/files/1/1520/2468/products/aventure-step-through-electric-bike-gallery-3_55fd9fbb-2672-4749-b7ca-07fb6ce7cb23.jpg?v=1651091603&width=1200'],
+      website: 'https://www.aventon.com/products/aventure-step-through-ebike',
+      throttle_control: 'thumb',
+      crank_set_teeth: 46
     }
   ]
 }
