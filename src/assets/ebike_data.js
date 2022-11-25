@@ -326,7 +326,7 @@ export const data = {
       brand: 'Aventon',
       model: 'Level Commuter',
       class: 3,
-      style: ['thin tire', 'front suspension', 'urban',''],
+      style: ['thin tire', 'front suspension', 'urban'],
       accessories: ['basket', 'fenders', 'front rack', 'head light', 'rear rack',],
       price: 1799,
       sizes: ['small', 'medium', 'large(out of stock)'],
@@ -383,7 +383,39 @@ export const data = {
       website:'https://www.aventon.com/products/level-ebike-v1',
       throttle_control: 'thumb',
       crank_set_teeth: 48
-      }
-    ] 
+      },
+    {
+      id: 13,
+      archive: false,
+      brand: 'Aventon',
+      model: 'Pace 350.2 step through',
+      class: 2,
+      style: ['thin tire', 'front suspension'],
+      accessories: ['basket', 'fenders', 'front rack', 'head light', 'rear rack',],
+      price: 1399,
+      sizes: ['S/M', 'M/L'],
+      weight: 49,
+      weight_capacity_lbs: 300,
+      top_speed_mph: 20,
+      wheel_size_in: 27.5,
+      tire_width_in: 2.2,
+      colors: ['plum purple', 'ghost white'],
+      battery_capacity_ah: 11.6,
+      battery_voltage: 36,
+      controller_a: -1,
+      motor_location: 'hub drive',
+      motor_wattage: 350,
+      motor_brand: 'No Data',
+      sensor: 'cadence',
+      torque_max_nm: -1,
+      range: 40,
+      brake_type: 'hydraulic',
+      speeds: 8,
+      image_url: ['https://cdn.shopify.com/s/files/1/1520/2468/products/plum_350_front_side.jpg?v=1649281757&width=1200', 'https://cdn.shopify.com/s/files/1/1520/2468/products/white_350_front_side.jpg?v=1649281757&width=1200'],
+      website:'https://www.aventon.com/products/level-ebike-v1',
+      throttle_control: 'thumb',
+      crank_set_teeth: 44,
+    }
+  ] 
 }
 
