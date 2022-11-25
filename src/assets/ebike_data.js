@@ -329,7 +329,7 @@ export const data = {
       style: ['thin tire', 'front suspension', 'urban',''],
       accessories: ['basket', 'fenders', 'front rack', 'head light', 'rear rack',],
       price: 1799,
-      sizes: ['S/M', 'M/L'],
+      sizes: ['small', 'medium', 'large(out of stock)'],
       weight: 62,
       weight_capacity_lbs: 300,
       top_speed_mph: 28,
@@ -351,6 +351,39 @@ export const data = {
       website:'https://www.aventon.com/products/level-ebike-v1',
       throttle_control: 'thumb',
       crank_set_teeth: 46
-    }
-  ]
+    },
+      {
+      id: 12,
+      archive: false,
+      brand: 'Aventon',
+      model: 'Level Commuter Step-Through',
+      class: 3,
+      style: ['thin tire', 'front suspension', 'urban',''],
+      accessories: ['basket', 'fenders', 'front rack', 'head light', 'rear rack',],
+      price: 1799,
+      sizes: ['S/M(out of stock)', 'M/L'],
+      weight: 62,
+      weight_capacity_lbs: 300,
+      top_speed_mph: 28,
+      wheel_size_in: 27.5,
+      tire_width_in: -1,
+      colors: ['rose gold', 'earth gray'],
+      battery_capacity_ah: 14,
+      battery_voltage: 48,
+      controller_a: -1,
+      motor_location: 'hub drive',
+      motor_wattage: 750,
+      motor_brand: 'No Data',
+      sensor: 'cadence',
+      torque_max_nm: -1,
+      range: 40,
+      brake_type: 'hydraulic',
+      speeds: 8,
+      image_url: ['https://cdn.shopify.com/s/files/1/1520/2468/products/3_4.jpg?v=1661995847&width=1200', 'https://cdn.shopify.com/s/files/1/1520/2468/products/Aventon.Level.Commuter.Ebike.Earth.Gray.Quarter.View.jpg?v=1661995847&width=1200',],
+      website:'https://www.aventon.com/products/level-ebike-v1',
+      throttle_control: 'thumb',
+      crank_set_teeth: 48
+      }
+    ] 
 }
+
