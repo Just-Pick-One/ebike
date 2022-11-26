@@ -294,7 +294,7 @@ export const data = {
       brand: 'Aventon',
       model: 'Level.2 Commuter Step-Through',
       class: 3,
-      style: ['thin tire', 'front suspension', 'urban',''],
+      style: [ 'front suspension', 'urban'],
       accessories: ['basket', 'fenders', 'front rack', 'head light', 'rear rack','aventon battery',],
       price: 1499,
       sizes: ['S/M', 'M/L'],
