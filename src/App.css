@@ -24,8 +24,8 @@
 .Header {
   position: relative;
   height: 10vh;
-  width: 85%;
-  left: 15%;
+  width: 100%;
+  /* left: 15%; */
   background-color: #112233;
   text-align: center;
 }
@@ -40,20 +40,25 @@
 
 .HeaderText {
   position: absolute;
-  top: 55%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 2.5em ;
 }
 
 .MultiEbikeView {
+  display: flex;
+  flex-direction: column;
   padding: 3vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .SideNavbar {
   height: auto ;
+  min-height: 100%;
   width: 18%;
   background-color: #112233;
   display: flex;

@@ -9,7 +9,7 @@ function Header () {
       className='HeaderImage'
       src={logo}
       /> */}
-      <h1 className='HeaderText' >All The eBikes</h1>
+      <h1 className='HeaderText' >All The E-Bikes</h1>
     </div>
   )
 }

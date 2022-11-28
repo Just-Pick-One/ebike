@@ -14,7 +14,7 @@ function MultiEbikeView (props) {
   return (
     <div className='MultiEbikeView'>
       <EbikeThumbnail />
-        <ImageList sx={{ width: '100%', height: '100%' }}>
+        <ImageList sx={{ width: '60%', height: '60%' }}>
         <ImageListItem key="Subheader" cols={2}>
         </ImageListItem>
         {ebikeState.map((ebike) => (
