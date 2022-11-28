@@ -1,8 +1,13 @@
 
 import React from 'react'
 import '../../App.css'
+import { MdPedalBike, MdMiscellaneousServices } from 'react-icons/md'
+import { BsCurrencyDollar, BsSpeedometer2 } from 'react-icons/bs'
+import { AiFillTag } from 'react-icons/ai'
+import { GiElectric, GiCartwheel } from 'react-icons/gi'
+import { TbEngine } from 'react-icons/tb'
 import { data } from '../../assets/ebike_data'
-import { allBrandsArray, allMotorLocationArray, allMotorWattageArray, allTopSpeedsArray, allWheelSizesArray, allClassArray } from '../functions/sidebar_functions'
+import { allBrandsArray, allMotorLocationArray, allMotorWattageArray, allStylesArray, allWheelSizesArray, allClassArray } from '../functions/sidebar_functions'
 import NavbarItem from './navbar_item'
 
 function SideNavbar (props) {
@@ -12,7 +17,7 @@ function SideNavbar (props) {
   const wheelSizes = allWheelSizesArray()
   const brands = allBrandsArray()
   const motorWattages = allMotorWattageArray()
-  const topSpeeds = allTopSpeedsArray()
+  const styles = allStylesArray()
   const motorType = allMotorLocationArray()
   const classes = allClassArray()
 
@@ -24,25 +29,20 @@ function SideNavbar (props) {
   return (
     <div
     className='SideNavbar'>
-      <h3
+      <span
       className='SideNavbarItems'
       onClick={() => handleClickAllBikes()}
       >
+        <MdPedalBike style={{ paddingRight: 5 }}/>
         All Bikes
-      </h3>
+      </span>
       <NavbarItem
         title= {'Price'}
         subNavItems={prices}
         setEbikes={setEbikes}
         dataKey={'price'}
         setShowSingleEbikeView={setShowSingleEbikeView}
-      />
-      <NavbarItem
-        title= {'Wheel Sizes'}
-        subNavItems={wheelSizes}
-        setEbikes={setEbikes}
-        dataKey={'wheel_size_in'}
-        setShowSingleEbikeView={setShowSingleEbikeView}
+        icon={<BsCurrencyDollar style={{ paddingRight: 5 }}/>}
       />
       <NavbarItem
         title= {'Brand'}
@@ -50,6 +50,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'brand'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        icon={<AiFillTag style={{ paddingRight: 5 }}/>}
       />
       <NavbarItem
         title= {'Motor Wattage'}
@@ -57,13 +58,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'motor_wattage'}
         setShowSingleEbikeView={setShowSingleEbikeView}
-      />
-      <NavbarItem
-        title= {'Top Speed'}
-        subNavItems={topSpeeds}
-        setEbikes={setEbikes}
-        dataKey={'top_speed_mph'}
-        setShowSingleEbikeView={setShowSingleEbikeView}
+        icon={<GiElectric style={{ paddingRight: 5 }}/>}
       />
       <NavbarItem
         title= {'Motor Type'}
@@ -71,6 +66,23 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'motor_location'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        icon={<TbEngine style={{ paddingRight: 5 }}/>}
+      />
+      <NavbarItem
+        title= {'Style'}
+        subNavItems={styles}
+        setEbikes={setEbikes}
+        dataKey={'style'}
+        setShowSingleEbikeView={setShowSingleEbikeView}
+        icon={<MdMiscellaneousServices style={{ paddingRight: 5 }}/>}
+      />
+      <NavbarItem
+        title= {'Wheel Sizes'}
+        subNavItems={wheelSizes}
+        setEbikes={setEbikes}
+        dataKey={'wheel_size_in'}
+        setShowSingleEbikeView={setShowSingleEbikeView}
+        icon={<GiCartwheel style={{ paddingRight: 5 }}/>}
       />
       <NavbarItem
         title= {'Class'}
@@ -78,6 +90,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'class'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        icon={<BsSpeedometer2 style={{ paddingRight: 5 }}/>}
       />
     </div>
   )

@@ -1,10 +1,8 @@
 import { useState } from 'react'
-// import { Typography } from '@mui/material'
-import { Box } from '@mui/system'
 import { filterEbikes } from '../functions/ebike_filter_function'
 
 function NavbarItem (props) {
-  const { title, subNavItems, setEbikes, dataKey, setShowSingleEbikeView } = props
+  const { title, subNavItems, setEbikes, dataKey, setShowSingleEbikeView, icon } = props
   const [open, setOpen] = useState(false)
 
   const handleClick = (event) => {
@@ -12,30 +10,32 @@ function NavbarItem (props) {
     setShowSingleEbikeView(false)
   }
   return (
-    <Box
+    <div
     className='SideNavbarItems'
-
     >
-    <h3
-      style={{ color: 'white' }}
+    {icon}
+    <span
       onClick={() => {
         if (!open) { setOpen(true) } else { setOpen(false) }
       }}
-    >{title}
-    </h3>
+    >
+      {title}
+    </span>
     {open
       ? subNavItems.map(item => {
-        return <h4
+        return <div>
+        <span
         className='SideNavBarSubItems'
         key={item.id}
         onClick={(event) => handleClick(event)}
         >
           {item
-        }</h4>
+        }</span>
+        </div>
       })
       : null
   }
-    </Box>
+    </div>
   )
 }
 

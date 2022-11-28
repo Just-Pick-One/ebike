@@ -36,12 +36,15 @@ export const allMotorWattageArray = () => {
 }
 
 // Filter through data to return array of top speed options for NavbarItem component
-export const allTopSpeedsArray = () => {
+export const allStylesArray = () => {
   const result = []
   ebikes.forEach(ebike => {
-    if (!result.includes(ebike.top_speed_mph)) {
-      result.push(ebike.top_speed_mph)
+    ebike.style.forEach(style => {
+      if (!result.includes(style)) {
+        result.push(style)
+      }
     }
+    )
   })
   return result
 }

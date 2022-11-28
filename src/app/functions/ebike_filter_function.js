@@ -4,6 +4,15 @@ export const filterEbikes = (category, spec, setStateFunc) => {
   // eslint-disable-next-line array-callback-return
   if (category === 'price') {
     filterEbikesByPrice(spec, setStateFunc)
+  } else if (category === 'style') {
+    const result = []
+    data.ebikes.forEach(ebike => {
+      if (ebike.style.includes(spec)) {
+        result.push(ebike)
+      }
+    }
+    )
+    setStateFunc(result)
   } else {
     const result = []
     data.ebikes.forEach((ebike) => {
