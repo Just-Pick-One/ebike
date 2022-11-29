@@ -14,7 +14,10 @@ function SingleBike (props) {
           <img
           className='SingleEbikeImage'
           src={image}
-          style={{ border: '3px solid black ' }}
+          style={{
+            // border: '1px solid black ',
+            margin: '5px'
+          }}
           ></img>
         ))
       }
