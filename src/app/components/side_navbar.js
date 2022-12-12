@@ -33,7 +33,7 @@ function SideNavbar (props) {
       className='SideNavbarItems'
       onClick={() => handleClickAllBikes()}
       >
-        <MdPedalBike style={{ paddingRight: 5 }}/>
+        <MdPedalBike style={{ paddingRight: 15 }}/>
         All Bikes
       </span>
       <NavbarItem
@@ -42,7 +42,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'price'}
         setShowSingleEbikeView={setShowSingleEbikeView}
-        icon={<BsCurrencyDollar style={{ paddingRight: 5 }}/>}
+        icon={<BsCurrencyDollar style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
         title= {'Brand'}
@@ -50,7 +50,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'brand'}
         setShowSingleEbikeView={setShowSingleEbikeView}
-        icon={<AiFillTag style={{ paddingRight: 5 }}/>}
+        icon={<AiFillTag style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
         title= {'Motor Wattage'}
@@ -58,7 +58,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'motor_wattage'}
         setShowSingleEbikeView={setShowSingleEbikeView}
-        icon={<GiElectric style={{ paddingRight: 5 }}/>}
+        icon={<GiElectric style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
         title= {'Motor Type'}
@@ -66,7 +66,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'motor_location'}
         setShowSingleEbikeView={setShowSingleEbikeView}
-        icon={<TbEngine style={{ paddingRight: 5 }}/>}
+        icon={<TbEngine style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
         title= {'Style'}
@@ -74,7 +74,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'style'}
         setShowSingleEbikeView={setShowSingleEbikeView}
-        icon={<MdMiscellaneousServices style={{ paddingRight: 5 }}/>}
+        icon={<MdMiscellaneousServices style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
         title= {'Wheel Sizes'}
@@ -82,7 +82,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'wheel_size_in'}
         setShowSingleEbikeView={setShowSingleEbikeView}
-        icon={<GiCartwheel style={{ paddingRight: 5 }}/>}
+        icon={<GiCartwheel style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
         title= {'Class'}
@@ -90,7 +90,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'class'}
         setShowSingleEbikeView={setShowSingleEbikeView}
-        icon={<BsSpeedometer2 style={{ paddingRight: 5 }}/>}
+        icon={<BsSpeedometer2 style={{ paddingRight: 15 }}/>}
       />
     </div>
   )

@@ -21,11 +21,21 @@
   left: 18% ;
 }
 
+.Corner {
+  position: fixed;
+  height: 10vh;
+  width: 18%;
+  background-color: #112233;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .Header {
   position: relative;
   height: 10vh;
   width: 100%;
-  /* left: 15%; */
   background-color: #112233;
   text-align: center;
 }

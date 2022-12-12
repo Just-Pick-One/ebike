@@ -16,6 +16,7 @@ function App () {
 
   return (
     <div className="App">
+      <div className='Corner' >nothign</div>
       <Header />
       <Body
       ebikeState={ebikes}
