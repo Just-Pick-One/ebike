@@ -1,9 +1,10 @@
 import { data } from '../../assets/ebike_data'
+const _ = require('lodash')
 
-export const filterEbikes = (category, spec, setStateFunc) => {
+export const filterEbikes = (category, spec, setEbikeStateFunc, setHeaderStateFunc) => {
   // eslint-disable-next-line array-callback-return
   if (category === 'price') {
-    filterEbikesByPrice(spec, setStateFunc)
+    filterEbikesByPrice(spec, setEbikeStateFunc)
   } else if (category === 'style') {
     const result = []
     data.ebikes.forEach(ebike => {
@@ -12,7 +13,7 @@ export const filterEbikes = (category, spec, setStateFunc) => {
       }
     }
     )
-    setStateFunc(result)
+    setEbikeStateFunc(result)
   } else {
     const result = []
     data.ebikes.forEach((ebike) => {
@@ -21,8 +22,9 @@ export const filterEbikes = (category, spec, setStateFunc) => {
       }
     }
     )
-    setStateFunc(result)
+    setEbikeStateFunc(result)
   }
+  setHeaderStateFunc(`${ebikeKeyDictionary[category]}: ${spec[0] === '$' ? spec : _.startCase(spec)}`)
 }
 
 const filterEbikesByPrice = (spec, setStateFunction) => {
@@ -92,7 +94,7 @@ const ebikeKeyDictionary = {
   brand: 'Brand',
   model: 'Model',
   class: 'Class',
-  style: 'Style(s)',
+  style: 'Style',
   accessories: 'Accessories',
   price: 'Price',
   sizes: 'Sizes',

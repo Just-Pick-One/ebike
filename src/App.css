@@ -66,6 +66,16 @@
   justify-content: center;
 }
 
+.MultiHeader {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em ;
+  color: #112233;
+  margin-top: 2vh;
+}
+
 .SideNavbar {
   position: fixed;
   height: auto ;
@@ -91,7 +101,7 @@ color:#A0ACBD
 }
 
 .SideNavBarSubItems {
-  padding-left: 30px;
+  padding-left: 40px;
   font-size: 0.85em ;
   text-decoration: none;
   color:white

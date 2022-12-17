@@ -11,9 +11,9 @@ import { allBrandsArray, allMotorLocationArray, allMotorWattageArray, allStylesA
 import NavbarItem from './navbar_item'
 
 function SideNavbar (props) {
-  const { setEbikes, setShowSingleEbikeView } = props
+  const { setEbikes, setShowSingleEbikeView, setMultiBikeHeader } = props
 
-  const prices = ['0 - $999', '$1000 - $1999', '$2000 and up']
+  const prices = ['$0 - $999', '$1000 - $1999', '$2000 and Up']
   const wheelSizes = allWheelSizesArray()
   const brands = allBrandsArray()
   const motorWattages = allMotorWattageArray()
@@ -24,6 +24,7 @@ function SideNavbar (props) {
   const handleClickAllBikes = () => {
     setEbikes(data.ebikes)
     setShowSingleEbikeView(false)
+    setMultiBikeHeader('All E-Bikes')
   }
 
   return (
@@ -42,6 +43,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'price'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        setMultiBikeHeader={setMultiBikeHeader}
         icon={<BsCurrencyDollar style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
@@ -50,6 +52,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'brand'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        setMultiBikeHeader={setMultiBikeHeader}
         icon={<AiFillTag style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
@@ -58,6 +61,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'motor_wattage'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        setMultiBikeHeader={setMultiBikeHeader}
         icon={<GiElectric style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
@@ -66,6 +70,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'motor_location'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        setMultiBikeHeader={setMultiBikeHeader}
         icon={<TbEngine style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
@@ -74,6 +79,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'style'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        setMultiBikeHeader={setMultiBikeHeader}
         icon={<MdMiscellaneousServices style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
@@ -82,6 +88,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'wheel_size_in'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        setMultiBikeHeader={setMultiBikeHeader}
         icon={<GiCartwheel style={{ paddingRight: 15 }}/>}
       />
       <NavbarItem
@@ -90,6 +97,7 @@ function SideNavbar (props) {
         setEbikes={setEbikes}
         dataKey={'class'}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        setMultiBikeHeader={setMultiBikeHeader}
         icon={<BsSpeedometer2 style={{ paddingRight: 15 }}/>}
       />
     </div>

@@ -4,7 +4,7 @@ import React from 'react'
 import EbikeThumbnail from './ebike_thumbnail'
 
 function MultiEbikeView (props) {
-  const { ebikeState, setSingleEbike, setShowSingleEbikeView } = props
+  const { ebikeState, setSingleEbike, setShowSingleEbikeView, multiBikeHeader } = props
 
   const showSingleEbike = (ebike) => {
     setSingleEbike(ebike)
@@ -12,6 +12,10 @@ function MultiEbikeView (props) {
   }
 
   return (
+    <div>
+      <div className='MultiHeader'>
+      {multiBikeHeader}
+      </div>
     <div className='MultiEbikeView'>
       <EbikeThumbnail />
         <ImageList sx={{ width: '60%', height: '60%' }}>
@@ -33,7 +37,7 @@ function MultiEbikeView (props) {
           </ImageListItem>
         ))}
     </ImageList>
-
+    </div>
     </div>
   )
 }

@@ -8,7 +8,8 @@ function Body (props) {
     setSingleEbike,
     singleEbike,
     showSingleEbikeView,
-    setShowSingleEbikeView
+    setShowSingleEbikeView,
+    multiBikeHeader
   } = props
 
   return (
@@ -22,6 +23,7 @@ function Body (props) {
         ebikeState={ebikeState}
         setSingleEbike={setSingleEbike}
         setShowSingleEbikeView={setShowSingleEbikeView}
+        multiBikeHeader={multiBikeHeader}
       />
       }
     </div>
