@@ -1,6 +1,10 @@
 import { data } from '../../assets/ebike_data'
 const _ = require('lodash')
 
+export const sortEbikes = (ebikes) => {
+  return _.orderBy(ebikes, [ebike => ebike.brand.toLowerCase()], ['asc'])
+}
+
 export const filterEbikes = (category, spec, setEbikeStateFunc, setHeaderStateFunc) => {
   // eslint-disable-next-line array-callback-return
   if (category === 'price') {
@@ -8,12 +12,12 @@ export const filterEbikes = (category, spec, setEbikeStateFunc, setHeaderStateFu
   } else if (category === 'style') {
     const result = []
     data.ebikes.forEach(ebike => {
-      if (ebike.style.includes(spec)) {
+      if ((ebike.style.includes(spec.toLowerCase()))) {
         result.push(ebike)
       }
     }
     )
-    setEbikeStateFunc(result)
+    setEbikeStateFunc(sortEbikes(result))
   } else {
     const result = []
     data.ebikes.forEach((ebike) => {
@@ -22,7 +26,7 @@ export const filterEbikes = (category, spec, setEbikeStateFunc, setHeaderStateFu
       }
     }
     )
-    setEbikeStateFunc(result)
+    setEbikeStateFunc(sortEbikes(result))
   }
   setHeaderStateFunc(`${ebikeKeyDictionary[category]}: ${spec[0] === '$' ? spec : _.startCase(spec)}`)
 }
@@ -30,14 +34,14 @@ export const filterEbikes = (category, spec, setEbikeStateFunc, setHeaderStateFu
 const filterEbikesByPrice = (spec, setStateFunction) => {
   const result = []
   switch (spec) {
-    case '0 - $999':
+    case '$0 - $999':
       data.ebikes.forEach((ebike) => {
         if (ebike.price < 999) {
           result.push(ebike)
         }
       }
       )
-      setStateFunction(result)
+      setStateFunction(sortEbikes(result))
       break
     case '$1000 - $1999':
       data.ebikes.forEach((ebike) => {
@@ -46,20 +50,19 @@ const filterEbikesByPrice = (spec, setStateFunction) => {
         }
       }
       )
-      setStateFunction(result)
+      setStateFunction(sortEbikes(result))
       break
-    case '$2000 and up':
+    case '$2000 and Up':
       data.ebikes.forEach((ebike) => {
         if (Number(ebike.price) > 2000) {
           result.push(ebike)
         }
       }
       )
-      setStateFunction(result)
-
+      setStateFunction(sortEbikes(result))
       break
   }
-  setStateFunction(result)
+  setStateFunction(sortEbikes(result))
 }
 
 export const cleanSingleEbikeData = (ebike) => {

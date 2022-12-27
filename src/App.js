@@ -3,6 +3,7 @@ import './App.css'
 import Body from './app/components/body'
 import Header from './app/components/header'
 import SideNavbar from './app/components/side_navbar'
+import { sortEbikes } from './app/functions/ebike_filter_function'
 import { data } from './assets/ebike_data'
 
 function App () {
@@ -12,7 +13,7 @@ function App () {
   const [showSingleEbikeView, setShowSingleEbikeView] = useState(false)
 
   useEffect(() => {
-    setEbikes(data.ebikes)
+    setEbikes(sortEbikes(data.ebikes))
   }, [])
 
   return (

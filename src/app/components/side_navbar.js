@@ -9,6 +9,8 @@ import { TbEngine } from 'react-icons/tb'
 import { data } from '../../assets/ebike_data'
 import { allBrandsArray, allMotorLocationArray, allMotorWattageArray, allStylesArray, allWheelSizesArray, allClassArray } from '../functions/sidebar_functions'
 import NavbarItem from './navbar_item'
+import { sortEbikes } from '../functions/ebike_filter_function'
+// import { sortEbikes } from '../functions/ebike_filter_function'
 
 function SideNavbar (props) {
   const { setEbikes, setShowSingleEbikeView, setMultiBikeHeader } = props
@@ -22,7 +24,7 @@ function SideNavbar (props) {
   const classes = allClassArray()
 
   const handleClickAllBikes = () => {
-    setEbikes(data.ebikes)
+    setEbikes(sortEbikes(data.ebikes))
     setShowSingleEbikeView(false)
     setMultiBikeHeader('All E-Bikes')
   }
