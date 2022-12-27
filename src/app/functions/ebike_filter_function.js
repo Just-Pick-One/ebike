@@ -72,13 +72,15 @@ export const cleanSingleEbikeData = (ebike) => {
   delete cleanedEbike.image_url
   delete cleanedEbike.website
   cleanedEbike.colors = cleanedEbike.colors.join(', ')
-  cleanedEbike.accessories = cleanedEbike.accessories.join(', ')
-  cleanedEbike.style = cleanedEbike.style.join(', ')
+  cleanedEbike.accessories = cleanedEbike.accessories.map(acc => _.startCase(acc)).join(', ')
+  cleanedEbike.style = cleanedEbike.style.map(style => _.startCase(style)).join(', ')
   cleanedEbike.sizes = cleanedEbike.sizes.join(', ')
 
   if (cleanedEbike.torque_max_nm === -1) cleanedEbike.torque_max_nm = 'No Data'
 
   if (cleanedEbike.controller_a === -1) cleanedEbike.controller_a = 'No Data'
+
+  if (cleanedEbike.top_speed_mph === -1) cleanedEbike.controller_a = 'No Data'
 
   return cleanedEbike
 }
