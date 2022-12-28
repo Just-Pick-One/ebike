@@ -80,7 +80,7 @@ export const cleanSingleEbikeData = (ebike) => {
 
   if (cleanedEbike.controller_a === -1) cleanedEbike.controller_a = 'No Data'
 
-  if (cleanedEbike.top_speed_mph === -1) cleanedEbike.controller_a = 'No Data'
+  if (cleanedEbike.top_speed_mph === -1) cleanedEbike.top_speed_mph = 'No Data'
 
   return cleanedEbike
 }
