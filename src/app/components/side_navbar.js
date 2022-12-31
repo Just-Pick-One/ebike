@@ -31,7 +31,9 @@ function SideNavbar (props) {
 
   return (
     <div
-    className='SideNavbar'>
+    className='SideNavbar'
+    style={{ overflowY: 'scroll' }}
+    >
       <span
       className='SideNavbarItems'
       onClick={() => handleClickAllBikes()}

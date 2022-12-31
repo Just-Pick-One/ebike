@@ -10,7 +10,7 @@ export const allWheelSizesArray = () => {
       result.push(ebike.wheel_size_in)
     }
   })
-  return result
+  return result.sort()
 }
 
 // Filter through data to return array of Brand options for NavbarItem component
@@ -21,7 +21,7 @@ export const allBrandsArray = () => {
       result.push(ebike.brand)
     }
   })
-  return result
+  return result.sort()
 }
 
 // Filter through data to return array of motor wattage options for NavbarItem component
@@ -32,7 +32,7 @@ export const allMotorWattageArray = () => {
       result.push(ebike.motor_wattage)
     }
   })
-  return result
+  return result.sort()
 }
 
 // Filter through data to return array of top speed options for NavbarItem component
@@ -46,7 +46,7 @@ export const allStylesArray = () => {
     }
     )
   })
-  return result
+  return result.sort()
 }
 
 // Filter through data to return array of top speed options for NavbarItem component
@@ -57,7 +57,7 @@ export const allMotorLocationArray = () => {
       result.push(ebike.motor_location)
     }
   })
-  return result
+  return result.sort()
 }
 
 // Filter through data to return array of class options for NavbarItem component
@@ -68,5 +68,5 @@ export const allClassArray = () => {
       result.push(ebike.class)
     }
   })
-  return result
+  return result.sort()
 }
