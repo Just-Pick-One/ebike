@@ -82,6 +82,10 @@ export const cleanSingleEbikeData = (ebike) => {
 
   if (cleanedEbike.top_speed_mph === -1) cleanedEbike.top_speed_mph = 'No Data'
 
+  if (cleanedEbike.crank_set_teeth === -1) cleanedEbike.crank_set_teeth = 'No Data'
+
+  if (cleanedEbike.battery_capacity_ah === -1) cleanedEbike.battery_capacity_ah = 'No Data'
+
   return cleanedEbike
 }
 
